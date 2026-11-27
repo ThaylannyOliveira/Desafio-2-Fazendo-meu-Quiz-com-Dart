@@ -1,7 +1,8 @@
 # Além do Óbvio — O que a Ciência Explica?
 
 **Trilha:** desenvolvimento mobile
-**Integrantes:** Thaylanny Oliveira Santos e [NOME DO SEGUNDO INTEGRANTE]
+
+**Integrantes:** Thaylanny Oliveira Santos 
 
 ## Sobre o projeto
 
