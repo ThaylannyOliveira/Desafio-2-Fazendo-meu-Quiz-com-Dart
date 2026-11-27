@@ -43,10 +43,10 @@ String askPlayerName() {
   }
 }
 
-/// Executa uma partida. Retorna false se o jogador encerrar a entrada.
+
 bool runQuiz(String playerName) {
   final List<QuizQuestion> questions = List<QuizQuestion>.from(quizQuestions);
-  questions.shuffle(Random()); // Extra: cada partida pode ter outra ordem.
+  questions.shuffle(Random());
   int score = 0;
 
   print('\n$playerName, o quiz tem ${questions.length} perguntas. Boa sorte!');
@@ -84,7 +84,6 @@ bool runQuiz(String playerName) {
   return true;
 }
 
-/// Repete a pergunta até receber uma opção válida; null indica fim da entrada.
 int? askAnswer() {
   while (true) {
     stdout.write('Sua resposta: ');
