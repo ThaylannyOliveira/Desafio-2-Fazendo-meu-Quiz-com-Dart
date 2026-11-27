@@ -1,6 +1,5 @@
 import 'question.dart';
 
-/// Banco de perguntas: cada questão possui quatro alternativas e uma resposta.
 const List<QuizQuestion> quizQuestions = [
   QuizQuestion(
     statement: 'Por que o céu costuma parecer azul durante o dia?',
