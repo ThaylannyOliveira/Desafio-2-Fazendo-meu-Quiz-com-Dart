@@ -1,88 +1,85 @@
-# Além do Óbvio — O que a Ciência Explica?
+Além do Óbvio — O que a Ciência Explica?
 
-**Trilha:** desenvolvimento mobile
+Trilha: Desenvolvimento Mobile
+Integrante: Thaylanny Oliveira Santos
 
-**Integrantes:** Thaylanny Oliveira Santos 
+Sobre o projeto
 
-## Sobre o projeto
+Além do Óbvio é um quiz de terminal desenvolvido em Dart, com o tema fenômenos científicos do cotidiano e curiosidades que despertam a vontade de aprender.
 
-Além do Óbvio é um quiz de terminal desenvolvido em Dart sobre fenômenos científicos que aparecem no cotidiano e curiosidades que despertam a vontade de aprender. O jogador responde perguntas de múltipla escolha e recebe explicações curtas após cada resposta.
+O jogador responde perguntas de múltipla escolha e recebe explicações curtas após cada resposta.
 
-O quiz possui 10 perguntas, quatro alternativas (A, B, C e D) por pergunta, identificação do jogador, validação de entrada, contagem de pontos, resultado com percentual, mensagens finais por desempenho e opção de jogar novamente. A ordem das perguntas é embaralhada a cada partida.
+O quiz possui 10 perguntas, quatro alternativas (A, B, C e D) por pergunta, identificação do jogador, validação de entrada, contagem de pontos, resultado com percentual, mensagens finais de acordo com o desempenho e opção de jogar novamente. A ordem das perguntas é embaralhada a cada partida.
 
-## Exemplo de pergunta
+Exemplo de pergunta
 
-**Por que o céu costuma parecer azul durante o dia?**
+Por que o céu costuma parecer azul durante o dia?
 
-- A) Porque os oceanos refletem sua cor para o céu
-- B) Porque a atmosfera espalha mais a luz azul do Sol
-- C) Porque o Sol emite somente luz azul
-- D) Porque as nuvens filtram todas as outras cores
+A) Porque os oceanos refletem sua cor para o céu
+B) Porque a atmosfera espalha mais a luz azul do Sol
+C) Porque o Sol emite somente luz azul
+D) Porque as nuvens filtram todas as outras cores
 
 Resposta correta: B.
 
-## Como criar e executar (conforme a atividade)
+Como criar e executar
 
-É necessário ter o Dart SDK instalado. Para cumprir a orientação de iniciar com `dart create`, abra o terminal na pasta onde deseja guardar o projeto e execute:
+Para executar o projeto, é necessário ter o Dart SDK instalado.
 
-```bash
+Conforme a orientação da atividade, o projeto pode ser criado utilizando o comando:
+
 dart create -t console alem_do_obvio
-```
 
-Depois, copie para a pasta criada os arquivos deste projeto, mantendo a estrutura `bin`, `lib` e `tool` (e substituindo o `pubspec.yaml` pelo deste projeto). Em seguida, dentro da pasta `alem_do_obvio`, execute:
+Depois, os arquivos do projeto devem ser organizados na estrutura correspondente, mantendo as pastas "bin", "lib" e "tool".
 
-```bash
+Dentro da pasta do projeto, execute:
+
 dart pub get
 dart run
-```
 
-O comando `dart run` inicia o programa principal localizado em `bin/alem_do_obvio.dart`.
+O comando "dart run" inicia o programa principal localizado em "bin/alem_do_obvio.dart".
 
-O comando `dart run` inicia o programa principal localizado em `bin/alem_do_obvio.dart`.
+Como verificar o projeto
 
-## Como verificar o projeto
+Para executar a verificação automática, utilize:
 
-Execute a verificação automática simples:
-
-```bash
 dart run tool/verify_quiz.dart
-```
 
-Ela confere se há pelo menos cinco perguntas, se cada pergunta possui quatro alternativas, se o índice da resposta correta é válido, se a normalização e a validação funcionam e se as mensagens de desempenho são selecionadas corretamente.
+A verificação confere se há pelo menos cinco perguntas, se cada pergunta possui quatro alternativas, se o índice da resposta correta é válido, se a normalização e a validação funcionam e se as mensagens de desempenho são selecionadas corretamente.
 
-Também recomendamos testar manualmente: respostas certas e erradas, letras minúsculas, Enter sem resposta, letras inválidas e a opção de jogar novamente.
+Também realizei testes manuais para verificar respostas corretas e incorretas, letras minúsculas, respostas vazias, alternativas inválidas e a opção de jogar novamente.
 
-## Organização dos arquivos
+Organização dos arquivos
 
-```text
 alem_do_obvio/
 ├── bin/
-│   └── alem_do_obvio.dart # Entrada e interação com o jogador
+│   └── alem_do_obvio.dart
 ├── lib/
-│   ├── question.dart     # Modelo de uma pergunta
-│   ├── questions.dart    # Lista de perguntas
-│   └── quiz.dart         # Funções de validação e mensagens
+│   ├── question.dart
+│   ├── questions.dart
+│   └── quiz.dart
 ├── tool/
-│   └── verify_quiz.dart  # Verificações automatizadas
+│   └── verify_quiz.dart
 ├── pubspec.yaml
 └── README.md
-```
 
-## Conceitos de Dart utilizados
+Conceitos de Dart utilizados
 
-- `List` para armazenar as perguntas e alternativas.
-- `for` para percorrer e apresentar as perguntas.
-- `while` para repetir a leitura até receber uma resposta válida.
-- `if/else` para verificar respostas e classificar o desempenho.
-- Funções para separar responsabilidades e facilitar a manutenção.
-- `stdin.readLineSync()` para receber dados digitados no terminal.
-- `Random` e `shuffle()` para embaralhar a ordem das perguntas.
+- "List": para armazenar as perguntas e alternativas.
+- "for": para percorrer e apresentar as perguntas.
+- "while": para repetir a leitura até receber uma resposta válida.
+- "if/else": para verificar as respostas e classificar o desempenho.
+- Funções: para separar responsabilidades e facilitar a manutenção.
+- "stdin.readLineSync()": para receber dados digitados no terminal.
+- "Random" e "shuffle()": para embaralhar a ordem das perguntas.
 
-## Uso de inteligência artificial
+Uso de inteligência artificial
 
-A inteligência artificial foi utilizada como apoio para planejar a estrutura inicial do projeto, sugerir a organização dos arquivos, revisar a lógica de validação e ajudar a elaborar perguntas e explicações científicas. Os integrantes devem revisar o código, adaptar mensagens e perguntas, preencher seus nomes e testar cada funcionalidade antes da entrega. As informações científicas foram conferidas em fontes de divulgação científica e documentação oficial listadas abaixo.
+Utilizei inteligência artificial como apoio no desenvolvimento do projeto, principalmente para planejar a estrutura inicial, organizar os arquivos, revisar a lógica de validação e elaborar perguntas e explicações científicas.
 
-## Fontes consultadas
+Revisei e adaptei o conteúdo do projeto de acordo com os requisitos da atividade. Também busquei compreender o funcionamento das estruturas utilizadas e verificar se o quiz atendia às funcionalidades solicitadas.
+
+Fontes consultadas
 
 - Dart — criação de projetos: https://dart.dev/tools/dart-create
 - Dart — leitura de entrada e interatividade: https://dart.dev/learn/tutorial/interactivity
@@ -90,12 +87,14 @@ A inteligência artificial foi utilizada como apoio para planejar a estrutura in
 - NASA — auroras: https://science.nasa.gov/sun/auroras/
 - Met Office — chuva e petricor: https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/rain
 
-## Histórico de desenvolvimento
+Histórico de desenvolvimento
 
-Registrem commits durante o desenvolvimento, por exemplo:
+Durante o desenvolvimento, organizei o projeto em etapas, registrando as alterações por meio de commits no GitHub.
 
-1. `chore: criar estrutura inicial do projeto`
-2. `feat: adicionar modelo e banco de perguntas`
-3. `feat: implementar fluxo do quiz e pontuação`
-4. `feat: validar respostas e adicionar replay`
-5. `docs: atualizar README e instruções de teste`
+Exemplos de commits:
+
+chore: criar estrutura inicial do projeto
+feat: adicionar modelo e banco de perguntas
+feat: implementar fluxo do quiz e pontuação
+feat: validar respostas e adicionar replay
+docs: atualizar README e instruções de teste
