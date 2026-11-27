@@ -1,6 +1,6 @@
 # Além do Óbvio — O que a Ciência Explica?
 
-**Trilha:** Dart / Desenvolvimento de software  
+**Trilha:** desenvolvimento mobile
 **Integrantes:** Thaylanny Oliveira Santos e [NOME DO SEGUNDO INTEGRANTE]
 
 ## Sobre o projeto
