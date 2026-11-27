@@ -1,11 +1,9 @@
-/// Normaliza uma resposta para facilitar a comparação.
+
 String normalizeAnswer(String answer) => answer.trim().toUpperCase();
 
-/// Retorna true quando a resposta é uma das alternativas A, B, C ou D.
 bool isValidAnswer(String answer) =>
     const ['A', 'B', 'C', 'D'].contains(normalizeAnswer(answer));
 
-/// Mensagem final baseada na proporção de acertos.
 String feedbackForScore(int correct, int total) {
   if (total <= 0) return 'Obrigado por participar!';
   final double percentage = correct / total;
