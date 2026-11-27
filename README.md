@@ -94,7 +94,11 @@ Durante o desenvolvimento, organizei o projeto em etapas, registrando as altera�
 Exemplos de commits:
 
 chore: criar estrutura inicial do projeto
+
 feat: adicionar modelo e banco de perguntas
+
 feat: implementar fluxo do quiz e pontuação
+
 feat: validar respostas e adicionar replay
+
 docs: atualizar README e instruções de teste
